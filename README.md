@@ -31,6 +31,9 @@ The `connect()` function connects a React component to a Redux store.
 The only use case for bindActionCreators is when you want to pass some action creators down to a component that isn't aware of Redux, and you don't want to pass dispatch or the Redux store to it.
 #### reduxForm()
 Creates a decorator with which you use redux-form to connect your form component to Redux. It takes a config parameter which lets you configure your form.
+###### Parameter : Config:Object
+- `form`: String [required], The name of your form and the key to where your form's state will be mounted under the redux-form reducer
+- `onSubmit`: Function [optional], The function to call with the form data when the handleSubmit() is fired from within the form component. 
 
 #### Hooks
 React's "hooks" APIs give function components the ability to use local component state, execute side effects, and more.  
