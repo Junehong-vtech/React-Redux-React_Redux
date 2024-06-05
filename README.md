@@ -29,6 +29,8 @@ The `<Provider>` component makes the Redux `store` available to any nested compo
 The `connect()` function connects a React component to a Redux store.
 #### bindActionCreators()
 The only use case for bindActionCreators is when you want to pass some action creators down to a component that isn't aware of Redux, and you don't want to pass dispatch or the Redux store to it.
+#### reduxForm()
+Creates a decorator with which you use redux-form to connect your form component to Redux. It takes a config parameter which lets you configure your form.
 
 #### Hooks
 React's "hooks" APIs give function components the ability to use local component state, execute side effects, and more.  
